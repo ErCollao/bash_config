@@ -5,4 +5,5 @@ alias ll='ls -lhGF'
 alias lla='ls -lhGFa'
 alias lll='du -skh *'
 alias vim.='vim .'
+alias cs..='cd ..'
 alias :q=exit
