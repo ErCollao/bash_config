@@ -11,13 +11,13 @@ matches:
   - trigger: "::sig"
     replace: "\nBest,\nDaniel"
 
-  - trigger: "::htmltest"
-    replace: "{{output}}"
-    vars:
-      - name: output
-        type: shell
-        params:
-          cmd: "textutil ~/.daniel/espanso/html/test.html -format html -convert rtf -stdout"
+  # - trigger: "::htmltest"
+  #   replace: "{{output}}"
+  #   vars:
+  #     - name: output
+  #       type: shell
+  #       params:
+  #         cmd: "textutil ~/.daniel/espanso/html/test.html -format html -convert rtf -stdout"
 
   # Dates
   - trigger: "::date"
@@ -29,10 +29,22 @@ matches:
           format: "%m/%d/%Y"
 
   # Shell commands
-  - trigger: "::shell"
-    replace: "{{output}}"
-    vars:
-      - name: output
-        type: shell
-        params:
-          cmd: "echo Hello from your shell"
+  # - trigger: "::shell"
+  #   replace: "{{output}}"
+  #   vars:
+  #     - name: output
+  #       type: shell
+  #       params:
+  #         cmd: "echo Hello from your shell"
+  #
+  - trigger: "::md.5" # Meeting, Daniel only, 30 minutes
+    replace: "cal.mixmax.com/danielcollado-ruiz/half-hour"
+
+  - trigger: "::md1" # Meeting, Daniel only, 60 minutes
+    replace: "cal.mixmax.com/danielcollado-ruiz/hour"
+
+  - trigger: "::mv"
+    replace: "cal.mixmax.com/danielcollado-ruiz/and-virpi"
+
+  - trigger: "::ma"
+    replace: "cal.mixmax.com/danielcollado-ruiz/and-antti"
