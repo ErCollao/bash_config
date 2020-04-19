@@ -8,3 +8,6 @@ alias vim.='vim .'
 alias cd..='cd ..'
 alias :q=exit
 alias browse_hivemind='firefox localhost:5000'
+
+# My quick access to servers
+alias sshfairforce='ssh fkqkuhxkmu@fairforce.tech'
