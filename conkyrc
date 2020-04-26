@@ -65,7 +65,7 @@ conky.config = {
 
 conky.text = [[
 ${font sans-serif:normal:size=8}${time %d-%m-%y}${alignr}${time %A}${font}
-${voffset -10}${font sans-serif:bold:size=18}${alignc}${time %H:%M}${font}
+${voffset -10}${font sans-serif:light:size=38}${alignc}${time %H:%M}${font}
 ${font}${voffset -4}
 ${font sans-serif:bold:size=8}SYSTEM ${hr 2}
 ${font sans-serif:normal:size=9}$sysname $kernel $alignr $machine
@@ -108,4 +108,6 @@ ${font sans-serif:normal:size=9}Local IPs:${alignr}External IP:
 ${color grey}${execi 1000 ip a | grep inet | grep -vw lo | grep -v inet6 | cut -d \/ -f1 | sed 's/[^0-9\.]*//g'}  ${alignr}${execi 1000  wget -q -O- http://ipecho.net/plain; echo}$color
 ${font sans-serif:normal:size=9}Down: ${color grey}${downspeed enp0s10}$color  ${alignr}Up: ${color grey}${upspeed enp0s10}$color
 ${color lightgray}${downspeedgraph enp0s10 30,130 } ${alignr}${upspeedgraph enp0s10 30,130 }$color
+
+${execi 3600 fortune}
 ]]

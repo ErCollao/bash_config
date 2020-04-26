@@ -5,6 +5,7 @@ alias ll='ls -lhGF'
 alias lla='ls -lhGFa'
 alias lll='du -skh *'
 alias vim.='vim .'
+alias ww='vim ~/.wiki/index.md.wiki'
 alias cd..='cd ..'
 alias :q=exit
 alias browse_hivemind='firefox localhost:5000'
