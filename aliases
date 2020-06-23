@@ -1,4 +1,5 @@
 # My personalized tooling instead of ls and such
+alias ls='ls --color=tty --quoting-style=literal'
 alias l='ls -GCF'
 alias la='ls -GCFa'
 alias ll='ls -lhGF'
@@ -8,7 +9,9 @@ alias vim.='vim .'
 alias ww='vim ~/.wiki/index.md.wiki'
 alias cd..='cd ..'
 alias :q=exit
+alias :qa='tmux kill-session'
 alias browse_hivemind='firefox localhost:5000'
 
 # My quick access to servers
-alias sshfairforce='ssh fkqkuhxkmu@fairforce.tech'
+alias sshwpfairforce='ssh fkqkuhxkmu@fairforce.tech'
+alias sshfairforce='ssh ercollao@185.26.48.205'

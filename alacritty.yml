@@ -117,9 +117,10 @@ colors:
 
 key_bindings:
   - { key: V, mods: Control, action: Paste }
-  - { key: C, mods: Control, action: Copy }
+  # - { key: C, mods: Control, action: Copy }
   - { key: Q, mods: Control, action: Quit }
   - { key: Return, mods: Control, action: ToggleFullscreen }
+  # - { key: C, mods: Alt, chars: "\x03" } # Since C-c is copy, make A-c its substitute
   # - { key: W, mods: Command, chars: "\x02&" }  # close tab (kill)
   # - { key: T, mods: Command, chars: "\x02c" }  # new tab
 # key_bindings:
