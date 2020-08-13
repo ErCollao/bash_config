@@ -1,5 +1,5 @@
 # My personalized tooling instead of ls and such
-alias ls='ls --color=tty --quoting-style=literal'
+# alias ls='ls --color=tty --quoting-style=literal'
 alias l='ls -GCF'
 alias la='ls -GCFa'
 alias ll='ls -lhGF'

@@ -1,0 +1,24 @@
+plugins=(git vi-mode colored-man-pages ruby bundler gem osx rbenv brew zsh-autosuggestions zsh-syntax-highlighting)
+
+# Requires installing some custom plugins, namely:
+#
+#     git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+#
+#     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+
+# Aliases
+source ~/.daniel/aliases
+
+# SSH into terminals with color and italics
+alias ssh='TERM=xterm-256color ssh'
+
+# Quick access to special folders (you can also put it in an ".aliases" file)
+alias cdnurtup='cd ~/development/nurtup'
+alias cdfairforce='cd ~/development/fairforce'
+alias cdev='cd ~/development'
+
+# Environment variables such as EDITOR
+source ~/.daniel/env
+
+# Install thefuck to correct typos, but be less rude
+eval $(thefuck --alias sure)
