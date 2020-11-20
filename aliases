@@ -12,6 +12,9 @@ alias :q=exit
 alias :qa='tmux kill-session'
 alias browse_hivemind='firefox localhost:5000'
 
+alias gbtm='git checkout master && git pull --prune' # Git back to master
+alias gbtmd='git checkout master && git pull --prune && git branch -d $(current_branch)' # Git back to master and delete
+
 # My quick access to servers
-alias sshwpfairforce='ssh fkqkuhxkmu@fairforce.tech'
+alias sshwpfairforce='ssh fkqkuhxkmu@fairforce.fi'
 alias sshfairforce='ssh ercollao@185.26.48.205'
