@@ -15,7 +15,7 @@ alias ssh='TERM=xterm-256color ssh'
 # Quick access to special folders (you can also put it in an ".aliases" file)
 alias cdnurtup='cd ~/development/nurtup'
 alias cdfairforce='cd ~/development/fairforce'
-alias cdev='cd ~/development'
+alias cddev='cd ~/development'
 
 # Environment variables such as EDITOR
 source ~/.daniel/env
