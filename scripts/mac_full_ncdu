@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ncdu --exclude /System/Volumes/Data/ -x /
